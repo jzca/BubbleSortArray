@@ -25,12 +25,17 @@ namespace SD230A2BubbleSortArray
             {
                 for (int i = 0; i < newInput.Count - 1; i++)
                 {
-                    temp = 0;
-                    if (newInput[i] > newInput[i + 1]) // If Index 1 is Smaller Than Index 2
+
+                    // If Index 1 is Bigger Than Index 2
+
+                    if (newInput[i] > newInput[i + 1])
                     {
-                        temp = newInput[i]; // Put Index 1 to temp
-                        newInput[i] = newInput[i + 1]; // Make I1 = I2 because it's bigger
-                        newInput[i + 1] = temp; // Make I2 =I1 because it's smaller
+                        // Put Index 1 to temp
+                        temp = newInput[i];
+                        // Make I1 is I2 because it's bigger
+                        newInput[i] = newInput[i + 1];
+                        // Make I2 is I1 because it's smaller
+                        newInput[i + 1] = temp;
                     }
                 }
             }
