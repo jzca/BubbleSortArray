@@ -1,21 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace SD230A2BubbleSortaArray
 {
-    class Program
+    class SortFunc
     {
-        //public List<int> Input { get; set; }
+        public List<int> Input { get; set; }
 
-        static void Main(string[] args)
+        public SortFunc()
         {
-    var newInput = new List<int>()
+            Input = new List<int>()
             {
                 8, -1, 7, 9, 4, -10, 0, 6, 2
             };
+        }
 
+        public object SortFuncDetail()
+        {
 
-            for (int i = 0; i < newInput.Count; i++)
+            for (int i = 0; i < Input.Count; i++)
             {
                 if (i > i + 1)
                 {
@@ -23,9 +27,10 @@ namespace SD230A2BubbleSortaArray
                 }
             }
 
-     Console.ReadLine();
-
-
+            return Console.ReadLine();
         }
+
+
+
     }
 }
